@@ -42,7 +42,8 @@ gen00:
 gen:
 	cd public/ && rm -f CNAME index.html
 	cd public/ && tree -H '.' --noreport --charset utf-8 > index.html
-	cat public/index.html > index.html
+	[ ! -f index.html ] || cat index.html > public/index.html 
+	make sed01
 	cp CNAME public/
 	cat config > .git/config
 	@echo
@@ -52,3 +53,12 @@ gen:
 	@echo
 	diff config .git/config
 	@echo
+
+sed01:
+	sed -i \
+		-e '/meta name=/d' \
+		-e '/ by Steve Baker and Thomas Moore/d' \
+		-e '/ by Francesc Rocher/d' \
+		-e '/ by Florian Sesser/d' \
+		-e '/ by Kyosuke Tokoro/d' \
+		public/index.html
