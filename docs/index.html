@@ -1,70 +1,152 @@
 <!DOCTYPE html>
 <html>
-<head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- <title>Directory Tree</title>
- <style type="text/css">
-  <!-- 
-  BODY { font-family : ariel, monospace, sans-serif; }
-  P { font-weight: normal; font-family : ariel, monospace, sans-serif; color: black; background-color: transparent;}
-  B { font-weight: normal; color: black; background-color: transparent;}
-  A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  .VERSION { font-size: small; font-family : arial, sans-serif; }
-  .NORM  { color: black;  background-color: transparent;}
-  .FIFO  { color: purple; background-color: transparent;}
-  .CHAR  { color: yellow; background-color: transparent;}
-  .DIR   { color: blue;   background-color: transparent;}
-  .BLOCK { color: yellow; background-color: transparent;}
-  .LINK  { color: aqua;   background-color: transparent;}
-  .SOCK  { color: fuchsia;background-color: transparent;}
-  .EXEC  { color: green;  background-color: transparent;}
-  -->
- </style>
-</head>
-<body>
-	<h1><a href="http://marstool.github.io/mp3s">marstool.github.io</a></h1><p>
-	<a href="http://marstool.github.io/mp300003">http://marstool.github.io/mp300003</a><br>
-	├── <a href="http://marstool.github.io/mp300003/2019_0430/">2019_0430</a><br>
-	│   └── <a href="http://marstool.github.io/mp300003/2019_0430/03/">03</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190405_h7XmDYm5T0g.mp3">20190405_h7XmDYm5T0g.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190405_nfc1_xvj1Yc.mp3">20190405_nfc1_xvj1Yc.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190406_PU3y36R4Oc4.mp3">20190406_PU3y36R4Oc4.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190408_0HOii6mgUSQ.mp3">20190408_0HOii6mgUSQ.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190408_BbaXFe3j3d8.mp3">20190408_BbaXFe3j3d8.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190409_DJulAzUnpSo.mp3">20190409_DJulAzUnpSo.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190410_jJ_KZCEJoPY.mp3">20190410_jJ_KZCEJoPY.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190410_PXc92qbtL8w.mp3">20190410_PXc92qbtL8w.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190411_N9x1CLo_zlA.mp3">20190411_N9x1CLo_zlA.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190411_wRgGMRrOG6c.mp3">20190411_wRgGMRrOG6c.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190413_AfukQAllTcI.mp3">20190413_AfukQAllTcI.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190413_cDoNp1eHz5E.mp3">20190413_cDoNp1eHz5E.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190415_23iUR5ae4co.mp3">20190415_23iUR5ae4co.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190415_aGCSLO8mKIE.mp3">20190415_aGCSLO8mKIE.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190416_7VfPOE1OYkc.mp3">20190416_7VfPOE1OYkc.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190417_9_YX9RjNzWk.mp3">20190417_9_YX9RjNzWk.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190418_kB9p4S1pyrY.mp3">20190418_kB9p4S1pyrY.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190418_sbV_b61QmyM.mp3">20190418_sbV_b61QmyM.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190422_7EZUkAhgA3Y.mp3">20190422_7EZUkAhgA3Y.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190422_idc1OmjVMKY.mp3">20190422_idc1OmjVMKY.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190423_4V7Lic2jqzU.mp3">20190423_4V7Lic2jqzU.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190425_K_FRxQO2ih4.mp3">20190425_K_FRxQO2ih4.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190426_Ux4J1eIEoFw.mp3">20190426_Ux4J1eIEoFw.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190427_As84v3qodG4.mp3">20190427_As84v3qodG4.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190427_t8g6YYmrCEE.mp3">20190427_t8g6YYmrCEE.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190428_bTMax107Rs4.mp3">20190428_bTMax107Rs4.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190428_gVWfs_b_31c.mp3">20190428_gVWfs_b_31c.mp3</a><br>
-	│   &nbsp;&nbsp;&nbsp; └── <a href="http://marstool.github.io/mp300003/2019_0430/03/20190429_OkZANJVoBvQ.mp3">20190429_OkZANJVoBvQ.mp3</a><br>
-	└── <h1><a href="http://marstool.github.io/mp3s">marstool.github.io</a></h1><br>
-	<br><br>
-	</p>
-	<p>
-	<br><br>
-	</p>
-	<hr>
-	<p class="VERSION">
-	</p>
-</body>
+  <head>
+	<meta name="generator" content="Hugo 0.55.4" />
+    <title> https://www.jjj123.com https://mp3s.jjj123.com</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="">
+<title> 老黑公民  ::  https://www.jjj123.com https://mp3s.jjj123.com</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','hddps://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-00000-00', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </head>
+  <body data-url="/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <a style="color:red" href="https://www.jjj123.com">https://www.jjj123.com</a>
+    <a style="color:Orange" class="baselink" href="/"> https://www.jjj123.com https://mp3s.jjj123.com</a>
+  
+
+
+    </div>
+  </div>
+
+      <ul class="topics">
+    <li data-nav-id="/20190405_h7xmdym5t0g/" class="dd-item
+        ">
+      <div>
+      <a href="/20190405_h7xmdym5t0g/"> 老黑公民 </a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer">
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+
+<div id="body-inner">
+  
+  <h4><a style="color:Orange" href="https://mp3s.jjj123.com"> 老黑公民 </a></h4>
+  
+
+
+
+    
+    
+    
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
+</span>
+           
+	
+		<h1>Customize your own home page</h1>
+		<p>
+		  The site is working. Don't forget to customize this homepage with your own. You typically have 2 choices :
+		</p>
+		<ul>
+		  <li><b>1. </b> Create an _index.md document in the content folder</li>
+		  <li><b>2. </b> Configure your server to automatically redirect this home page to one of your documentation pages</li>
+		</ul>
+	
+	<p><i class="fa fa-heart fa-4x"></i></p>
+
+
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+<a class="nav nav-next" href="/20190405_h7xmdym5t0g/" title=" 老黑公民 " style="margin-right: 0px;"><label> 老黑公民 </label><i class="fa fa-chevron-right"></i></a></div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
 </html>
