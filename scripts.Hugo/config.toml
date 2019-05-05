@@ -2,7 +2,7 @@ baseURL = "/"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = " https://www.jjj123.com https://mp3s.jjj123.com"
+title = " 老黑公民 跑路到西班牙的中国人的观点 "
 theme = "hugo-theme-docdock"
 #themesdir = "../.."
 themesdir = "./themes"

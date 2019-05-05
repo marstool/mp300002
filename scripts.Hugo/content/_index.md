@@ -1,24 +1,28 @@
 +++
-title = " 老黑公民 "
-description = " https://www.youtube.com/watch?v=DkhcE1dvL8g "
+title = "  老黑公民 跑路到西班牙的中国人的观点"
+description = "  老黑公民 跑路到西班牙的中国人的观点  "
 weight = 20
 +++
 
 
 
-
-* [ 老黑公民 20190502_gdhwkxel2ug 为何这么多人骂郭文贵，砸郭挺郭的心态如何？]({{%relref "20190502_gdhwkxel2ug/_index.md" %}})
-
-
-* [ 老黑公民 20190502_dkhce1dvl8g 宁做美国狗，不做中国人的由来，反思98年印尼黑色五月暴动]({{%relref "20190502_dkhce1dvl8g/_index.md" %}})
+* [  201904 老黑公民  ]({{< relref "old_201904" >}})
 
 
-* [ 老黑公民 20190501_avekgwxtvsw 一包香煙引發的血案，大陸人對台灣228時代的看法，大陸天天228！]({{%relref "20190501_avekgwxtvsw/_index.md" %}})
+* [  支持并且声援leonard的绝地反击，良心驱使，义不容辞！ ]({{< relref "20190505_myqqf04xef8" >}})
 
 
+* [  癌症大病越来越多！我们距离倾家荡产只隔着一场大病！  ]({{< relref "20190504_xostc88gyqa" >}})
 
-* [ 201904 老黑公民 ]({{%relref "old_201904/_index.md" %}})
+
+* [  十几亿马列子孙忙着醉生梦死，有几个人敢去反思共产主义？  ]({{< relref "20190504_ehai1nz8e9e" >}})
 
 
-* [ 老黑公民 ]({{%relref "_index.md" %}})
+* [  老黑公民 20190502_gdhwkxel2ug 为何这么多人骂郭文贵，砸郭挺郭的心态如何？ ]({{< relref "20190502_gdhwkxel2ug" >}})
+
+
+* [  老黑公民 20190502_dkhce1dvl8g 宁做美国狗，不做中国人的由来，反思98年印尼黑色五月暴动 ]({{< relref "20190502_dkhce1dvl8g" >}})
+
+
+* [  老黑公民 20190501_avekgwxtvsw 一包香煙引發的血案，大陸人對台灣228時代的看法，大陸天天228！ ]({{< relref "20190501_avekgwxtvsw" >}})
 
